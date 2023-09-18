@@ -9,7 +9,14 @@ import { getUserInformation } from '../../services/user';
 import { UserInformation } from '../../services/user/types';
 import * as S from './style';
 
-import { User, Power, Archive, House, Question } from '@phosphor-icons/react';
+import {
+  User,
+  Power,
+  Archive,
+  House,
+  Question,
+  Keyboard
+} from '@phosphor-icons/react';
 import Cookies from 'js-cookie';
 
 export default function SideNavBar() {
@@ -152,6 +159,26 @@ export default function SideNavBar() {
                 <S.navBarLink href="/home">
                   <House size={24} />
                   <S.PLink>Home</S.PLink>
+                </S.navBarLink>
+              </S.LiInsideDiv>
+            )}
+          </S.LiItems>
+          <S.LiItems>
+            {!isOpen ? (
+              <>
+                {!isMobile && (
+                  <S.LiInsideDiv isOpen={isOpen} isMobile={isMobile}>
+                    <S.navBarLink href="/dashboard">
+                      <Keyboard size={24} />
+                    </S.navBarLink>
+                  </S.LiInsideDiv>
+                )}
+              </>
+            ) : (
+              <S.LiInsideDiv isOpen={isOpen} isMobile={isMobile}>
+                <S.navBarLink href="/dashboard">
+                  <Keyboard size={24} />
+                  <S.PLink>Dashboard</S.PLink>
                 </S.navBarLink>
               </S.LiInsideDiv>
             )}
