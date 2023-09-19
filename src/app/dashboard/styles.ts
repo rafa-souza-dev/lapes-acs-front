@@ -3,6 +3,15 @@ import { Input } from '../../components/Input';
 
 import styled from 'styled-components';
 
+export const Lacuna = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Container = styled.main`
   display: flex;
   flex-direction: row;
