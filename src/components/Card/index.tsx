@@ -5,17 +5,12 @@ import { useEffect, useState } from 'react';
 import { ProgressBar } from '../ProgressBar';
 
 export default function CardAll() {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (progress < 100) {
-        setProgress(progress + 10);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [progress]);
+  const progressValues = {
+    Extensao: 60,
+    Gestao: 30,
+    Ensino: 15,
+    Pesquisa: 70
+  };
 
   return (
     <div
@@ -54,46 +49,22 @@ export default function CardAll() {
         style={{
           width: '100%',
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          marginBottom: '4%'
         }}
       >
-        <div
-          style={{
-            width: '100%',
-            marginTop: '4%'
-          }}
-        >
-          <p>Extensão</p>
-          <ProgressBar progressValue={progress} />
-        </div>
-        <div
-          style={{
-            width: '100%',
-            marginTop: '4%'
-          }}
-        >
-          <p>Gestão</p>
-          <ProgressBar progressValue={progress} />
-        </div>
-        <div
-          style={{
-            width: '100%',
-            marginTop: '4%'
-          }}
-        >
-          <p>Ensino</p>
-          <ProgressBar progressValue={progress} />
-        </div>
-        <div
-          style={{
-            width: '100%',
-            marginTop: '4%',
-            marginBottom: '5%'
-          }}
-        >
-          <p>Pesquisa</p>
-          <ProgressBar progressValue={progress} />
-        </div>
+        {Object.entries(progressValues).map(([category, progress]) => (
+          <div
+            key={category}
+            style={{
+              width: '100%',
+              marginTop: '4%'
+            }}
+          >
+            <p>{category}</p>
+            <ProgressBar progressValue={progress} />
+          </div>
+        ))}
       </div>
     </div>
   );
