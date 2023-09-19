@@ -35,7 +35,7 @@ export default function CardSolicitationsArquived() {
         <p
           style={{
             color: 'black',
-            fontSize: '1em',
+            fontSize: '0.8em',
             fontWeight: 'bold',
             marginTop: '5%'
           }}
@@ -54,7 +54,7 @@ export default function CardSolicitationsArquived() {
         <p
           style={{
             color: 'black',
-            fontSize: '2em',
+            fontSize: '1.5em',
             fontWeight: 'bold',
             marginTop: '5%'
           }}

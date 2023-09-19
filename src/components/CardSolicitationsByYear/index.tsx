@@ -17,7 +17,7 @@ export default function CardSolicitationsByYear() {
     <div
       style={{
         width: '100%',
-        height: '150px',
+        height: '50%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -26,7 +26,8 @@ export default function CardSolicitationsByYear() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        marginTop: '1%'
       }}
     >
       <div
@@ -55,7 +56,7 @@ export default function CardSolicitationsByYear() {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          marginBottom: '4%'
+          marginBottom: '6%'
         }}
       >
         {Object.entries(progressValues).map(([year, progress]) => (
@@ -63,9 +64,11 @@ export default function CardSolicitationsByYear() {
             key={year}
             style={{
               width: '100%',
-              marginTop: '4%'
+              marginTop: '4%',
+              marginBottom: '8%'
             }}
           >
+            <p>{progress}</p>
             <ProgressUpBar progressValue={progress} />
             <p>{year}</p>
           </div>

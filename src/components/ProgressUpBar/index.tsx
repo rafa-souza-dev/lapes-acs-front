@@ -26,7 +26,7 @@ export const ProgressUpBar: React.FC<ProgressBarProps> = ({
   return (
     <div
       style={{
-        width: '16px', // Largura fixa para preenchimento vertical
+        width: '50%', // Largura fixa para preenchimento vertical
         backgroundColor: '#e0e0e0',
         borderRadius: '4px',
         height: '100%', // Altura máxima

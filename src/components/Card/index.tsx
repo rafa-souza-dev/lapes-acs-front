@@ -62,12 +62,26 @@ export default function CardAll() {
           >
             <p
               style={{
-                fontSize: '1em'
+                fontSize: '0.8em'
               }}
             >
               {category}
             </p>
-            <ProgressBar progressValue={progress} />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row'
+              }}
+            >
+              <ProgressBar progressValue={progress} />
+              <p
+                style={{
+                  fontSize: '0.8em'
+                }}
+              >
+                {progress}h
+              </p>
+            </div>
           </div>
         ))}
       </div>

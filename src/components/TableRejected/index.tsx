@@ -19,6 +19,30 @@ export default function TableRejected() {
       motivo: 'Motivo 4'
     },
     {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
+      id: '4',
+      motivo: 'Motivo 4'
+    },
+    {
       id: '5',
       motivo: 'Motivo 5'
     }
@@ -36,7 +60,9 @@ export default function TableRejected() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        maxHeight: '300px',
+        overflowY: 'auto'
       }}
     >
       <div

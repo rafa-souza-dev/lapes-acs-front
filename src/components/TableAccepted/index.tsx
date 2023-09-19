@@ -27,6 +27,42 @@ export default function TableAccepted() {
       eixo: 'Pesquisa'
     },
     {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
+      id: '4',
+      horasReg: '50H',
+      horasCom: '40H',
+      eixo: 'Pesquisa'
+    },
+    {
       id: '5',
       horasReg: '45H',
       horasCom: '35H',
@@ -46,7 +82,9 @@ export default function TableAccepted() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        maxHeight: '300px',
+        overflowY: 'auto'
       }}
     >
       <div

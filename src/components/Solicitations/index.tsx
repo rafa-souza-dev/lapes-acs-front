@@ -41,7 +41,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           <p
             style={{
               color: 'black',
-              fontSize: '1em',
+              fontSize: '0.9em',
               fontWeight: 'bold'
             }}
           >
@@ -50,7 +50,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           <p
             style={{
               color: 'black',
-              fontSize: '1em'
+              fontSize: '0.8em'
             }}
           >
             {id}
@@ -66,7 +66,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           <p
             style={{
               color: 'black',
-              fontSize: '1em',
+              fontSize: '0.9em',
               fontWeight: 'bold'
             }}
           >
@@ -75,7 +75,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           <p
             style={{
               color: 'black',
-              fontSize: '1em'
+              fontSize: '0.8em'
             }}
           >
             {date}
@@ -94,7 +94,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
         <p
           style={{
             color: 'black',
-            fontSize: '1em',
+            fontSize: '0.9em',
             fontWeight: 'bold'
           }}
         >
@@ -103,7 +103,7 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
         <p
           style={{
             color: 'black',
-            fontSize: '1em'
+            fontSize: '0.8em'
           }}
         >
           {hours}

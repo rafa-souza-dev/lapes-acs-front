@@ -50,9 +50,10 @@ export default function Dashboard() {
             height: '75%',
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-evenly',
+            justifyContent: 'center',
             alignItems: 'center',
-            alignContent: 'center'
+            alignContent: 'center',
+            gap: '2%'
           }}
         >
           <div
@@ -60,10 +61,10 @@ export default function Dashboard() {
               display: 'flex',
               flexDirection: 'column',
               width: '20%',
-              maxHeight: '60%',
+              maxHeight: '70%',
               justifyContent: 'center',
               alignItems: 'center',
-              marginTop: '3%'
+              marginTop: '4%'
             }}
           >
             <CardAll />
@@ -73,19 +74,23 @@ export default function Dashboard() {
           <div
             style={{
               width: '60%',
+              maxHeight: '70%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
+              gap: '2%'
             }}
           >
             <div
               style={{
                 width: '100%',
+                height: '100%',
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                alignItems: 'center'
+                alignItems: 'center',
+                gap: '2%'
               }}
             >
               <CardSolicitationsAccepted />
@@ -94,10 +99,12 @@ export default function Dashboard() {
             <div
               style={{
                 width: '100%',
+                height: '100%',
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                alignContent: 'flex-start'
+                alignContent: 'end',
+                gap: '2%'
               }}
             >
               <CardSolicitationsByYear />

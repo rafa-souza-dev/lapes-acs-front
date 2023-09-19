@@ -12,6 +12,7 @@ export default function CardSolicitationsStatus() {
     <div
       style={{
         width: '100%',
+        height: '50%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -20,7 +21,8 @@ export default function CardSolicitationsStatus() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        marginTop: '1%'
       }}
     >
       <div
@@ -58,7 +60,15 @@ export default function CardSolicitationsStatus() {
             }}
           >
             <p>{category}</p>
-            <ProgressBar progressValue={progress} />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row'
+              }}
+            >
+              <ProgressBar progressValue={progress} />
+              <p>{progress}</p>
+            </div>
           </div>
         ))}
       </div>
