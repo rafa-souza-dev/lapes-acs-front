@@ -4,6 +4,7 @@ import CardAll from '../../components/Card';
 import CardSolicitations from '../../components/CardSolicitations';
 import CardSolicitationsAccepted from '../../components/CardSolicitationsAccepted';
 import CardSolicitationsArquived from '../../components/CardSolicitationsArquived';
+import CardSolicitationsByYear from '../../components/CardSolicitationsByYear';
 import CardSolicitationsRejected from '../../components/CardSolicitationsRejected';
 
 export default function Dashboard() {
@@ -68,13 +69,32 @@ export default function Dashboard() {
           <div
             style={{
               display: 'flex',
-              flexDirection: 'row',
+              flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center'
             }}
           >
-            <CardSolicitationsAccepted />
-            <CardSolicitationsRejected />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <CardSolicitationsAccepted />
+              <CardSolicitationsRejected />
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <CardSolicitationsByYear />
+            </div>
           </div>
         </div>
       </div>
