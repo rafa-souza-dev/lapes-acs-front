@@ -6,6 +6,7 @@ import CardSolicitationsAccepted from '../../components/CardSolicitationsAccepte
 import CardSolicitationsArquived from '../../components/CardSolicitationsArquived';
 import CardSolicitationsByYear from '../../components/CardSolicitationsByYear';
 import CardSolicitationsRejected from '../../components/CardSolicitationsRejected';
+import CardSolicitationsStatus from '../../components/CardSolicitationsStatus';
 
 export default function Dashboard() {
   return (
@@ -94,6 +95,7 @@ export default function Dashboard() {
               }}
             >
               <CardSolicitationsByYear />
+              <CardSolicitationsStatus />
             </div>
           </div>
         </div>
