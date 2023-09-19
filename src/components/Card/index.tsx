@@ -1,8 +1,22 @@
 'use client';
 
-import { Progress } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+
+import { ProgressBar } from '../ProgressBar';
 
 export default function CardAll() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (progress < 100) {
+        setProgress(progress + 10);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [progress]);
+
   return (
     <div
       style={{
@@ -26,10 +40,7 @@ export default function CardAll() {
       >
         Minhas Horas Por Eixo
       </p>
-      <Progress value={80} />
-      <Progress value={80} />
-      <Progress value={80} />
-      <Progress value={80} />
+      <ProgressBar progressValue={progress} />
     </div>
   );
 }
