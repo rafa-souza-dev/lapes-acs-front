@@ -2,6 +2,7 @@
 
 import CardAll from '../../components/Card';
 import CardSolicitations from '../../components/CardSolicitations';
+import CardSolicitationsArquived from '../../components/CardSolicitationsArquived';
 
 export default function Dashboard() {
   return (
@@ -52,6 +53,7 @@ export default function Dashboard() {
         >
           <CardAll />
           <CardSolicitations />
+          <CardSolicitationsArquived />
         </div>
       </div>
     </div>
