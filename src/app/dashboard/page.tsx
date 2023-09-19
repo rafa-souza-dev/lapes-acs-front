@@ -2,6 +2,7 @@
 
 import CardAll from '../../components/Card';
 import CardSolicitations from '../../components/CardSolicitations';
+import CardSolicitationsAccepted from '../../components/CardSolicitationsAccepted';
 import CardSolicitationsArquived from '../../components/CardSolicitationsArquived';
 
 export default function Dashboard() {
@@ -44,16 +45,35 @@ export default function Dashboard() {
         <div
           style={{
             display: 'flex',
-            flexDirection: 'column',
-            width: '300px',
-            height: '70%',
+            flexDirection: 'row',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            alignContent: 'center'
           }}
         >
-          <CardAll />
-          <CardSolicitations />
-          <CardSolicitationsArquived />
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '300px',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <CardAll />
+            <CardSolicitations />
+            <CardSolicitationsArquived />
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <CardSolicitationsAccepted />
+          </div>
         </div>
       </div>
     </div>
