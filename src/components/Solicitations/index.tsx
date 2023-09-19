@@ -1,6 +1,12 @@
 'use client';
 
-export default function Solicitations() {
+interface SolicitationsProps {
+  id: string;
+  date: string;
+  hours: string;
+}
+
+export default function Solicitations({ id, date, hours }: SolicitationsProps) {
   return (
     <div
       style={{
@@ -41,7 +47,7 @@ export default function Solicitations() {
           >
             ID:
           </p>
-          <p>XXXXXXX</p>
+          <p>{id}</p>
         </div>
         <div
           style={{
@@ -59,7 +65,7 @@ export default function Solicitations() {
           >
             Data:
           </p>
-          <p>Dia/mês/ano</p>
+          <p>{date}</p>
         </div>
       </div>
       <div
@@ -67,7 +73,8 @@ export default function Solicitations() {
           width: '100%',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          marginLeft: '20%'
         }}
       >
         <p
@@ -79,7 +86,7 @@ export default function Solicitations() {
         >
           Horas:
         </p>
-        <p>00H</p>
+        <p>{hours}</p>
       </div>
     </div>
   );

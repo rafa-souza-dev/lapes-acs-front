@@ -3,6 +3,33 @@
 import Solicitations from '../Solicitations';
 
 export default function CardSolicitations() {
+  const solicitationData = [
+    {
+      id: '12345',
+      date: '01/09/2023',
+      hours: '12H'
+    },
+    {
+      id: '67890',
+      date: '02/09/2023',
+      hours: '10H'
+    },
+    {
+      id: '12345',
+      date: '01/09/2023',
+      hours: '12H'
+    },
+    {
+      id: '67890',
+      date: '02/09/2023',
+      hours: '10H'
+    },
+    {
+      id: '12345',
+      date: '01/09/2023',
+      hours: '12H'
+    }
+  ];
   return (
     <div
       style={{
@@ -45,11 +72,14 @@ export default function CardSolicitations() {
           marginBottom: '4%'
         }}
       >
-        <Solicitations />
-        <Solicitations />
-        <Solicitations />
-        <Solicitations />
-        <Solicitations />
+        {solicitationData.map((solicitation) => (
+          <Solicitations
+            key={solicitation.id}
+            id={solicitation.id}
+            date={solicitation.date}
+            hours={solicitation.hours}
+          />
+        ))}
       </div>
     </div>
   );
