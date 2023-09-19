@@ -8,16 +8,16 @@ export default function CardSolicitationsByYear() {
     '2018': 0,
     '2019': 0,
     '2020': 15,
-    '2021': 18,
-    '2022': 20,
-    '2023': 17
+    '2021': 90,
+    '2022': 60,
+    '2023': 40
   };
 
   return (
     <div
       style={{
         width: '100%',
-        height: '100px',
+        height: '150px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -32,6 +32,7 @@ export default function CardSolicitationsByYear() {
       <div
         style={{
           width: '100%',
+          height: '100%',
           display: 'flex',
           justifyContent: 'center'
         }}
@@ -50,6 +51,7 @@ export default function CardSolicitationsByYear() {
       <div
         style={{
           width: '100%',
+          height: '100%',
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',

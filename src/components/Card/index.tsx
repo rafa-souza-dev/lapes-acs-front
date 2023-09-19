@@ -22,7 +22,8 @@ export default function CardAll() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        marginBottom: '3%'
       }}
     >
       <div
@@ -59,7 +60,13 @@ export default function CardAll() {
               marginTop: '4%'
             }}
           >
-            <p>{category}</p>
+            <p
+              style={{
+                fontSize: '1em'
+              }}
+            >
+              {category}
+            </p>
             <ProgressBar progressValue={progress} />
           </div>
         ))}

@@ -15,7 +15,6 @@ export default function Dashboard() {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        height: '100vh',
         background: '#f1efef'
       }}
     >
@@ -47,9 +46,11 @@ export default function Dashboard() {
         </div>
         <div
           style={{
+            width: '100%',
+            height: '75%',
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'center',
+            justifyContent: 'space-evenly',
             alignItems: 'center',
             alignContent: 'center'
           }}
@@ -58,9 +59,11 @@ export default function Dashboard() {
             style={{
               display: 'flex',
               flexDirection: 'column',
-              width: '300px',
+              width: '20%',
+              maxHeight: '60%',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
+              marginTop: '3%'
             }}
           >
             <CardAll />
@@ -69,6 +72,7 @@ export default function Dashboard() {
           </div>
           <div
             style={{
+              width: '60%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -77,9 +81,10 @@ export default function Dashboard() {
           >
             <div
               style={{
+                width: '100%',
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
                 alignItems: 'center'
               }}
             >
@@ -88,10 +93,11 @@ export default function Dashboard() {
             </div>
             <div
               style={{
+                width: '100%',
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'center',
-                alignItems: 'center'
+                justifyContent: 'space-between',
+                alignContent: 'flex-start'
               }}
             >
               <CardSolicitationsByYear />

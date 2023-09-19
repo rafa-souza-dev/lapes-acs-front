@@ -47,7 +47,14 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           >
             ID:
           </p>
-          <p>{id}</p>
+          <p
+            style={{
+              color: 'black',
+              fontSize: '1em'
+            }}
+          >
+            {id}
+          </p>
         </div>
         <div
           style={{
@@ -65,7 +72,14 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
           >
             Data:
           </p>
-          <p>{date}</p>
+          <p
+            style={{
+              color: 'black',
+              fontSize: '1em'
+            }}
+          >
+            {date}
+          </p>
         </div>
       </div>
       <div
@@ -86,7 +100,14 @@ export default function Solicitations({ id, date, hours }: SolicitationsProps) {
         >
           Horas:
         </p>
-        <p>{hours}</p>
+        <p
+          style={{
+            color: 'black',
+            fontSize: '1em'
+          }}
+        >
+          {hours}
+        </p>
       </div>
     </div>
   );

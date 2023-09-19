@@ -42,7 +42,8 @@ export default function CardSolicitations() {
         border: '1px solid #DCDCDC',
         borderRadius: '10px',
         paddingLeft: '2%',
-        paddingRight: '2%'
+        paddingRight: '2%',
+        marginBottom: '3%'
       }}
     >
       <div
