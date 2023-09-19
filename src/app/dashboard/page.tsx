@@ -4,6 +4,7 @@ import CardAll from '../../components/Card';
 import CardSolicitations from '../../components/CardSolicitations';
 import CardSolicitationsAccepted from '../../components/CardSolicitationsAccepted';
 import CardSolicitationsArquived from '../../components/CardSolicitationsArquived';
+import CardSolicitationsRejected from '../../components/CardSolicitationsRejected';
 
 export default function Dashboard() {
   return (
@@ -73,6 +74,7 @@ export default function Dashboard() {
             }}
           >
             <CardSolicitationsAccepted />
+            <CardSolicitationsRejected />
           </div>
         </div>
       </div>
