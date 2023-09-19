@@ -1,6 +1,7 @@
 'use client';
 
 import CardAll from '../../components/Card';
+import CardSolicitations from '../../components/CardSolicitations';
 
 export default function Dashboard() {
   return (
@@ -50,6 +51,7 @@ export default function Dashboard() {
           }}
         >
           <CardAll />
+          <CardSolicitations />
         </div>
       </div>
     </div>

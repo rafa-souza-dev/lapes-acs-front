@@ -1,15 +1,8 @@
 'use client';
 
-import { ProgressBar } from '../ProgressBar';
+import Solicitations from '../Solicitations';
 
-export default function CardAll() {
-  const progressValues = {
-    Extensão: 60,
-    Gestão: 30,
-    Ensino: 15,
-    Pesquisa: 70
-  };
-
+export default function CardSolicitations() {
   return (
     <div
       style={{
@@ -40,9 +33,10 @@ export default function CardAll() {
             marginTop: '5%'
           }}
         >
-          Minhas Horas Por Eixo
+          Top Solicitações
         </p>
       </div>
+
       <div
         style={{
           width: '100%',
@@ -51,18 +45,11 @@ export default function CardAll() {
           marginBottom: '4%'
         }}
       >
-        {Object.entries(progressValues).map(([category, progress]) => (
-          <div
-            key={category}
-            style={{
-              width: '100%',
-              marginTop: '4%'
-            }}
-          >
-            <p>{category}</p>
-            <ProgressBar progressValue={progress} />
-          </div>
-        ))}
+        <Solicitations />
+        <Solicitations />
+        <Solicitations />
+        <Solicitations />
+        <Solicitations />
       </div>
     </div>
   );
