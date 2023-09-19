@@ -21,26 +21,80 @@ export default function CardAll() {
     <div
       style={{
         width: '100%',
-        height: '50px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'start',
         backgroundColor: '#f0f8ff',
-        border: '1px solid black',
-        borderRadius: '4px'
+        border: '1px solid #DCDCDC',
+        borderRadius: '10px',
+        paddingLeft: '2%',
+        paddingRight: '2%'
       }}
     >
-      <p
+      <div
         style={{
-          color: 'black',
-          fontSize: '1em',
-          fontWeight: 'bold'
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center'
         }}
       >
-        Minhas Horas Por Eixo
-      </p>
-      <ProgressBar progressValue={progress} />
+        <p
+          style={{
+            color: 'black',
+            fontSize: '1em',
+            fontWeight: 'bold',
+            marginTop: '5%'
+          }}
+        >
+          Minhas Horas Por Eixo
+        </p>
+      </div>
+      <div
+        style={{
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column'
+        }}
+      >
+        <div
+          style={{
+            width: '100%',
+            marginTop: '4%'
+          }}
+        >
+          <p>Extensão</p>
+          <ProgressBar progressValue={progress} />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            marginTop: '4%'
+          }}
+        >
+          <p>Gestão</p>
+          <ProgressBar progressValue={progress} />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            marginTop: '4%'
+          }}
+        >
+          <p>Ensino</p>
+          <ProgressBar progressValue={progress} />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            marginTop: '4%',
+            marginBottom: '5%'
+          }}
+        >
+          <p>Pesquisa</p>
+          <ProgressBar progressValue={progress} />
+        </div>
+      </div>
     </div>
   );
 }
